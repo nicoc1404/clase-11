@@ -316,7 +316,7 @@
                             L.marker([t.geometry.coordinates[1], t.geometry.coordinates[0]]).addTo(mapaChile).bindPopup(t.properties.place);
                         }
                         //si es que dice Mexico en el place
-                        if (t.properties.place.includes("Mexico") && t.properties.mag > 3.9) {
+                        if (t.properties.place.includes("Mexico") && t.properties.mag > 3.3) {
                             mexicanos.innerHTML += `<tr>
                             <td><a href="${t.properties.url}" target="_blank">${t.properties.place}</a></td>
                             <td>${tiempo(t.properties.time)}</td>
